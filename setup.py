@@ -6,13 +6,13 @@ README = (file / "README.md").read_text()
 
 setup(
     name='opencv-cuda',
-    version='0.0.1',
+    version='0.0.2',
     packages=['opencv_cuda'],
     author="Nuhman Pk",
     author_email="nuhmanpk7@gmail.com",
     long_description = README,
     long_description_content_type = "text/markdown",
-    description=" Unleash the power of OpenCV with CV2Filters, the ultimate image processing wrapper for all skill levels, revolutionizing computer vision with seamless exploration, manipulation, and groundbreaking research",
+    description="opencv-cuda simplifies the installation of GPU-accelerated OpenCV with CUDA support for efficient image and video processing. ",
     license="MIT",
         classifiers=[
         "Programming Language :: Python :: 3",
