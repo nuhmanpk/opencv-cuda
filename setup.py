@@ -5,10 +5,6 @@ import pathlib
 file = pathlib.Path(__file__).parent
 
 # README = (file / "README.md").read_text()
-import subprocess
-
-# Install Cython
-subprocess.run(["pip", "install", "Cython"])
 
 
 exts = [
@@ -40,7 +36,8 @@ setup(
     url="https://github.com/nuhmanpk/opencv-cuda",
     install_requires=[
         'numpy',
-        'opencv-python'
+        'opencv-python',
+        'cython'
     ],
     ext_modules=cythonize(exts, language_level=3),
     python_requires=">=3.6",
