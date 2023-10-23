@@ -9,13 +9,13 @@ README = (file / "README.md").read_text()
 exts = [
     Extension(
         name="opencv_cuda.install_script:main",
-        sources=["opencv_cuda/install_script.py"]
+        sources=["opencv_cuda/install_script.pyx"]
     )
 ]
 
 setup(
     name='opencv-cuda',
-    version='0.0.2.1',
+    version='0.0.2.2',
     packages=['opencv_cuda'],
     author="Nuhman Pk",
     author_email="nuhmanpk7@gmail.com",
