@@ -38,6 +38,6 @@ setup(
         'numpy',
         'opencv-python'
     ],
-    ext_modules=cythonize(exts, language_level=3)
+    ext_modules=cythonize(exts, language_level=3),
     python_requires=">=3.6",
 )
