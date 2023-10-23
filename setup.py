@@ -1,4 +1,5 @@
 from setuptools import setup, Extension
+from Cython.Build import cythonize
 import pathlib
 
 file = pathlib.Path(__file__).parent
@@ -37,6 +38,6 @@ setup(
         'numpy',
         'opencv-python'
     ],
-    ext_modules=(exts),
+    ext_modules=cythonize(exts, language_level=3)
     python_requires=">=3.6",
 )
