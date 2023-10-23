@@ -4,7 +4,7 @@ import pathlib
 
 file = pathlib.Path(__file__).parent
 
-README = (file / "README.md").read_text()
+# README = (file / "README.md").read_text()
 
 
 exts = [
@@ -20,7 +20,7 @@ setup(
     packages=['opencv_cuda'],
     author="Nuhman Pk",
     author_email="nuhmanpk7@gmail.com",
-    long_description = README,
+    # long_description = README,
     long_description_content_type = "text/markdown",
     description="opencv-cuda simplifies the installation of GPU-accelerated OpenCV with CUDA support for efficient image and video processing. ",
     license="MIT",
