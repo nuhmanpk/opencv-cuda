@@ -5,6 +5,10 @@ import pathlib
 file = pathlib.Path(__file__).parent
 
 # README = (file / "README.md").read_text()
+import subprocess
+
+# Install Cython
+subprocess.run(["pip", "install", "Cython"])
 
 
 exts = [
