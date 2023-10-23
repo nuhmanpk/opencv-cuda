@@ -1,12 +1,21 @@
-from setuptools import setup
+from setuptools import setup, Extension
 import pathlib
+
 file = pathlib.Path(__file__).parent
 
 README = (file / "README.md").read_text()
 
+
+exts = [
+    Extension(
+        name="opencv_cuda.install_script:main",
+        sources=["opencv_cuda/install_script.py"]
+    )
+]
+
 setup(
     name='opencv-cuda',
-    version='0.0.2',
+    version='0.0.2.1',
     packages=['opencv_cuda'],
     author="Nuhman Pk",
     author_email="nuhmanpk7@gmail.com",
@@ -28,10 +37,6 @@ setup(
         'numpy',
         'opencv-python'
     ],
-    entry_points={
-        'console_scripts': [
-            'install_opencv_cuda = opencv_cuda.install_script:main'
-        ]
-    },
+    ext_modules=(exts),
     python_requires=">=3.6",
 )
