@@ -16,7 +16,7 @@ exts = [
 
 setup(
     name='opencv-cuda',
-    version='0.0.2.2',
+    version='0.0.3',
     packages=['opencv_cuda'],
     author="Nuhman Pk",
     author_email="nuhmanpk7@gmail.com",
